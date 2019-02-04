@@ -30,8 +30,7 @@ RUN apt-get update && \
 
 # Copying executable files
 COPY data                 /usr/local/bin/test/data
-COPY lib                  /usr/local/bin/test/lib
-COPY main.py              /usr/local/bin/test/main.py
+COPY src                  /usr/local/bin/test/src
 COPY requirements.txt     /usr/local/bin/test/requirements.txt
 
 
@@ -39,4 +38,4 @@ COPY requirements.txt     /usr/local/bin/test/requirements.txt
 RUN pip3 install -r /usr/local/bin/test/requirements.txt
 
 
-CMD python3 /usr/local/bin/test/main.py
+CMD python3 /usr/local/bin/test/src/main.py

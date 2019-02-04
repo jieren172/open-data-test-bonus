@@ -16,7 +16,7 @@ Otherwise, gdal will use jasper to handle jp2 format image, which will limit the
 `pip3 install -r requirements.txt`
 
 * run :
-`python3 main.py`
+`python3 src/main.py`
 
 
 

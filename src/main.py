@@ -5,7 +5,7 @@ import json
 
 def main ():
 
-    dir_name = path.dirname(__file__)
+    dir_name = path.dirname(path.dirname(__file__))
 
     # Test 1
     print('\n-- Running test 1 ...')
